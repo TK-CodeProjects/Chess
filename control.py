@@ -170,40 +170,4 @@ def get_square(pos):
                     click_c = 7 - c_
                 return click_r, click_c
     return None
-
-
-def write(event):
-    match gui.active_tb.get_tb_type():
-        case "TextBox":
-            write_on_tb(event)
-        case "MultiTextBox":
-            write_on_mtb(event)
-
-
-def write_on_tb(event):
-    if event.key == pygame.K_ESCAPE:
-        gui.active_tb.set_not_active()
-        return
-    if event.key == pygame.K_BACKSPACE:
-        gui.active_tb.text = gui.active_tb.text[:-1]
-        return
-    gui.active_tb.text += event.unicode
-
-
-def write_on_mtb(event):
-    if event.key == pygame.K_ESCAPE:
-        gui.active_tb.set_not_active()
-        return
-    if event.key == pygame.K_BACKSPACE:
-        gui.active_tb.text[gui.active_tb.i_selected] = gui.active_tb.text[gui.active_tb.i_selected][:-1]
-        return
-    if event.key == pygame.K_RETURN:
-        if pygame.key.get_mods() & pygame.KMOD_SHIFT:
-            if gui.active_tb.i_selected > 0:
-                gui.active_tb.i_selected -= 1
-            return
-        else:
-            if gui.active_tb.i_selected < gui.active_tb.num_lines - 1:
-                gui.active_tb.i_selected += 1
-            return
-    gui.active_tb.text[gui.active_tb.i_selected] += event.unicode
+    
