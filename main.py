@@ -11,9 +11,7 @@ while control.running:
     for event in pygame.event.get():
 
         if event.type == pygame.KEYDOWN:
-            if gui.active_tb is not None:
-                control.write(event)
-            elif event.key == pygame.K_ESCAPE:
+            if event.key == pygame.K_ESCAPE:
                 control.running = False
 
         elif event.type == pygame.MOUSEBUTTONDOWN:
