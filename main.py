@@ -1,7 +1,6 @@
 import pygame
 import game_states_and_settings as gss
 import control
-import gui
 import ai
 
 clock = pygame.time.Clock()
