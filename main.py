@@ -4,6 +4,7 @@ import control
 import gui
 import ai
 
+clock = pygame.time.Clock()
 
 while control.running:
 
@@ -27,6 +28,8 @@ while control.running:
         ai.play()
 
     control.update()
+
+    clock.tick(60)
 
 
 pygame.quit()
