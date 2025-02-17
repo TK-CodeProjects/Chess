@@ -17,7 +17,6 @@ red_checkmate = (128, 0, 0)
 
 font = pygame.font.SysFont("monospace", 16)
 font_label = pygame.font.SysFont("monospace", 20)
-active_tb = None
 selected_color = True
 str_executed_move = ""
 scrolling = False
