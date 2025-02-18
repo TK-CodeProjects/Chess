@@ -37,13 +37,13 @@ Rechts neben dem Schachbrett wird der Spielverlauf angezeigt.
 Das Programm besteht aus mehreren Dateien:
 - `board.py` – Enthält die Klasse für einzelne Felder und das Schachbrett
 - `game_states_and_settings.py` – Speichert die Einstellungen und den aktuellen Spielzustand
-- `check_tests.py` – Enthält alle Prüfungen auf direkte und Abzugsschachs
+- `check_tests.py` – Enthält alle erforderlichen Prüfungen auf direkte Schachs und Abzugsschachs
 - `get_moves.py` – Enthält alle Funktionen, die zur Ermittlung aller ausführbaren Züge benötigt werden
 - `execute_moves.py` – Enthält alle Funktionen, die zur Ausführung der Züge benötigt werden
 - `pieces.py` – Enthält die Klassen für die Schachfiguren
 - `gui.py` – Verwaltet die Benutzeroberfläche
-- `control.py` – Reagiert auf Benutzeraktionen
+- `control.py` – Verwaltet die Steuerung durch den Benutzer
 - `ai.py` – Wählt einen zufälligen legalen Zug für den Computer
-- `pins.py` – Verwaltet Pins, um die legalen Züge effizienter zu berechnen
+- `pins.py` – Verwaltet alle Informationen über aktuelle Pins, um die legalen Züge effizienter zu berechnen
 - `main.py` – Enthält die `pygame`-Hauptschleife
 - `Pieces/` – Enthält die Bilder der Schachfiguren
