@@ -11,7 +11,8 @@ Das Programm verfügt über eine grafische Benutzeroberfläche und die Figuren l
 ## Installation
 Neben einer kompatiblen Python-Version muss lediglich `pygame` installiert werden.
 
-Installation `pygame`: "pip install pygame"
+Installation `pygame`:
+```sh pip install pygame ```
 
 ## Start des Programms
 Das Programm wird durch Ausführen der `main.py` gestartet:
